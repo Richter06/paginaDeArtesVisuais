@@ -14,13 +14,19 @@ O projeto combina uma experiência visual inspirada em um atelier artístico com
 
 ### Galeria de obras
 
-<img src="public/img/sobre.png" alt="Seção de apresentação e galeria do Little Bee" width="800">
+<img src="public/img/sobre.png" alt="Galeria e apresentação do Little Bee" width="800">
 
 ### Área administrativa
 
-<img src="public/img/processo.png" alt="Área administrativa do projeto Little Bee" width="800">
+<img src="public/img/admin.png" alt="Painel administrativo do Little Bee" width="800">
 
 ### Tela de login
+
+<img src="public/img/login.png" alt="Tela de login do Little Bee" width="800">
+
+### Outras seções do site
+
+<img src="public/img/processo.png" alt="Processo criativo do Little Bee" width="800">
 
 <img src="public/img/contatos.png" alt="Seção de contatos e encomendas do Little Bee" width="800">
 
@@ -163,7 +169,7 @@ paginaDeArtesVisuais/
 │
 ├── public/
 │   ├── img/
-│   │   └── lb.jpeg           # Foto da artista / assets estáticos
+│   │   └── assets estáticos e screenshots
 │   │
 │   ├── admin.html             # Painel administrativo
 │   ├── admin.js               # Lógica do painel
