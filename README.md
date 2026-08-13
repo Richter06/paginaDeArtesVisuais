@@ -8,22 +8,21 @@ O projeto combina uma experiência visual inspirada em um atelier artístico com
 
 ## 📸 Preview
 
-
 ### Página inicial
 
-**[ Espaço para screenshot da página inicial ]**
+<img src="public/img/header.png" alt="Página inicial do Little Bee — Arte & Pintura" width="800">
 
 ### Galeria de obras
 
-**[ Espaço para screenshot da galeria ]**
+<img src="public/img/sobre.png" alt="Seção de apresentação e galeria do Little Bee" width="800">
 
 ### Área administrativa
 
-**[ Espaço para screenshot do painel administrativo ]**
+<img src="public/img/processo.png" alt="Área administrativa do projeto Little Bee" width="800">
 
 ### Tela de login
 
-**[ Espaço para screenshot da tela de login ]**
+<img src="public/img/contatos.png" alt="Seção de contatos e encomendas do Little Bee" width="800">
 
 ---
 
@@ -164,23 +163,23 @@ paginaDeArtesVisuais/
 │
 ├── public/
 │   ├── img/
-│   │   └── lb.jpeg          # Foto da artista / asset estático
+│   │   └── lb.jpeg           # Foto da artista / assets estáticos
 │   │
-│   ├── admin.html            # Painel administrativo
-│   ├── admin.js              # Lógica do painel
-│   ├── index.html            # Página pública
-│   ├── login.html            # Tela de autenticação
-│   ├── login.js              # Lógica do login
-│   ├── script.js             # Galeria e interações públicas
-│   └── styles.css            # Estilos do projeto
+│   ├── admin.html             # Painel administrativo
+│   ├── admin.js               # Lógica do painel
+│   ├── index.html             # Página pública
+│   ├── login.html             # Tela de autenticação
+│   ├── login.js               # Lógica do login
+│   ├── script.js              # Galeria e interações públicas
+│   └── styles.css             # Estilos do projeto
 │
 ├── supabase/
-│   └── supabase.js           # Cliente Supabase
+│   └── supabase.js            # Cliente Supabase
 │
 ├── .gitignore
 ├── package.json
 ├── package-lock.json
-├── server.js                 # API e servidor Express
+├── server.js                  # API e servidor Express
 └── README.md
 ```
 
