@@ -224,13 +224,19 @@ const upload = multer({
 
     fileFilter: (req, file, cb) => {
 
-        if (file.mimetype.startsWith("image/")) {
+        const tiposPermitidos = [
+            "image/jpeg",
+            "image/png",
+            "image/webp"
+        ];
+
+        if (tiposPermitidos.includes(file.mimetype)) {
 
             cb(null, true);
 
         } else {
 
-            cb(new Error("Somente imagens são permitidas."));
+            cb(new Error("Somente imagens JPEG, PNG ou WebP são permitidas."));
 
         }
 

@@ -77,30 +77,27 @@ fetch("/api/pinturas")
 
         pinturas.forEach(pintura => {
 
+            const quadro = document.createElement("div");
+            quadro.className = "quadro";
 
+            const imagem = document.createElement("img");
+            imagem.src = pintura.imagem;
+            imagem.alt = pintura.titulo;
+            imagem.addEventListener("click", () => {
+                abrirImagem(imagem.src);
+            });
 
-            galeria.innerHTML += `
+            const titulo = document.createElement("h3");
+            titulo.textContent = pintura.titulo;
 
-    <div class="quadro">
+            const tecnica = document.createElement("p");
+            tecnica.textContent = pintura.tecnica;
 
-        <img 
-            src="${pintura.imagem}" 
-            onclick="abrirImagem(this.src)"
-            alt="${pintura.titulo}"
-        >
+            quadro.appendChild(imagem);
+            quadro.appendChild(titulo);
+            quadro.appendChild(tecnica);
 
-        <h3>
-            ${pintura.titulo}
-        </h3>
-
-        <p>
-            ${pintura.tecnica}
-        </p>
-
-    </div>
-
-`;
-
+            galeria.appendChild(quadro);
 
         });
 

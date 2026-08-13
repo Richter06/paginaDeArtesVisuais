@@ -70,41 +70,34 @@ function carregarPinturas() {
                     "card-pintura";
 
 
-                card.innerHTML = `
+                const imagem = document.createElement("img");
+                imagem.src = pintura.imagem;
+                imagem.alt = pintura.titulo;
 
-                    <img 
-                        src="${pintura.imagem}" 
-                        alt="${pintura.titulo}"
-                    >
+                const titulo = document.createElement("h3");
+                titulo.textContent = pintura.titulo;
 
-                    <h3>
-                        ${pintura.titulo}
-                    </h3>
+                const tecnica = document.createElement("p");
+                tecnica.textContent = pintura.tecnica;
 
-                    <p>
-                        ${pintura.tecnica}
-                    </p>
+                const editar = document.createElement("button");
+                editar.className = "editar";
+                editar.dataset.id = pintura.id;
+                editar.textContent = "Editar";
 
-                    <button
-                        class="editar"
-                        data-id="${pintura.id}">
-                        Editar
-                    </button>
+                const apagar = document.createElement("button");
+                apagar.className = "apagar";
+                apagar.dataset.id = pintura.id;
+                apagar.textContent = "Excluir";
 
-                    <button
-                        class="apagar"
-                        data-id="${pintura.id}">
-                        Excluir
-                    </button>
-
-                `;
+                card.appendChild(imagem);
+                card.appendChild(titulo);
+                card.appendChild(tecnica);
+                card.appendChild(editar);
+                card.appendChild(apagar);
 
 
-                const editar =
-                    card.querySelector(".editar");
-
-                const apagar =
-                    card.querySelector(".apagar");
+            
 
 
                 // ==========================
