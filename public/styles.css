@@ -900,103 +900,125 @@ h2 {
 
 
 /* ==========================
- ENCOMENDAS
+   ENCOMENDAS
 ========================== */
-
 
 .encomendas {
 
-
     background:
-
-
         radial-gradient(circle at bottom right,
-
             var(--pessego),
-
             transparent 45%),
-
-
         var(--rosa);
 
-
 }
-
-
-
-
-
 
 .encomendas h2 {
 
-
     color: #8f6655;
-
 
 }
 
 
+/* ==========================
+   CONTATOS DA ARTISTA
+========================== */
+
+.contatos-artista {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    flex-wrap: wrap;
+
+}
 
 
+/* BASE DOS BOTÕES */
 
-.encomendas a {
+.encomendas .contatos-artista a {
 
+    display: inline-flex;
 
-    display: inline-block;
+    align-items: center;
 
+    justify-content: center;
 
     margin-top: 35px;
 
-
-    padding: 18px 55px;
-
-
+    padding: 17px 35px;
 
     border-radius: 50px;
 
-
-
-    background: var(--terracota);
-
-
-
-    color: white;
-
-
     text-decoration: none;
 
+    font-family: "Poppins", sans-serif;
 
+    font-weight: 500;
 
-    transition: .3s;
-
-
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
 
 }
 
 
+/* ==========================
+   WHATSAPP
+========================== */
 
+.encomendas .contatos-artista .botao-whatsapp {
 
+    background: #cfe8d6;
 
+    color: #416b4b;
 
+    border: 1px solid #b8dcca;
 
-.encomendas a:hover {
+}
 
+.encomendas .contatos-artista .botao-whatsapp:hover {
 
     transform: translateY(-5px);
 
-
+    background: #c2dfca;
 
     box-shadow:
-
-
-        0 15px 35px rgba(185, 130, 104, .35);
-
+        0 15px 35px rgba(65, 107, 75, .20);
 
 }
 
 
+/* ==========================
+   INSTAGRAM
+========================== */
 
+.encomendas .contatos-artista .botao-instagram {
 
+    background: #ead4df;
+
+    color: #8a536d;
+
+    border: 1px solid #dfc0d0;
+
+}
+
+.encomendas .contatos-artista .botao-instagram:hover {
+
+    transform: translateY(-5px);
+
+    background: #e3c7d5;
+
+    box-shadow:
+        0 15px 35px rgba(138, 83, 109, .20);
+
+}
 
 
 
