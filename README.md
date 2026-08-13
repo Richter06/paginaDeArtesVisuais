@@ -8,17 +8,6 @@ O projeto combina uma experiência visual inspirada em um atelier artístico com
 
 ## 📸 Preview
 
-<!--
-ADICIONE AQUI AS IMAGENS DO PROJETO.
-Sugestão de organização:
-- docs/screenshots/home.png
-- docs/screenshots/gallery.png
-- docs/screenshots/login.png
-- docs/screenshots/admin.png
-
-Exemplo:
-<img src="docs/screenshots/home.png" alt="Página inicial" width="800">
--->
 
 ### Página inicial
 
