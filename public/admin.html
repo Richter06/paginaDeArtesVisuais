@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Painel Emily Calixto</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Sunflower:wght@300;500;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <main class="painel">
+
+
+        <div class="decoracao decoracao1"></div>
+        <div class="decoracao decoracao2"></div>
+
+
+
+        <section class="cabecalho-painel">
+
+
+            <span>
+                Atelier Emily Calixto
+            </span>
+
+
+            <h1>
+                Painel de Obras
+            </h1>
+
+
+            <p>
+                Adicione novas pinturas e mantenha sua coleção sempre atualizada.
+            </p>
+
+
+        </section>
+
+
+
+
+
+        <form class="form-pintura">
+
+
+            <div class="campo">
+
+
+                <label>
+                    Nome da obra
+                </label>
+
+
+                <input type="text" id="titulo" placeholder="Ex: Flores no Jardim">
+
+
+            </div>
+
+
+
+
+
+            <div class="campo">
+
+
+                <label>
+                    Técnica utilizada
+                </label>
+
+
+                <input type="text" id="tecnica" placeholder="Ex: Acrílica sobre tela">
+
+
+            </div>
+
+
+
+
+
+            <div class="campo">
+
+
+                <label>
+                    Imagem da obra
+                </label>
+
+
+                <label class="upload" id="areaUpload">
+
+                    <img id="previewImagem" src="" alt="">
+
+                    <span id="textoUpload">
+                        Escolher imagem
+                    </span>
+
+                    <input type="file" id="inputImagem" accept="image/*">
+
+                </label>
+
+
+            </div>
+
+
+
+
+
+
+            <button type="submit" id="botaoSalvar">
+                Adicionar ao acervo
+            </button>
+
+
+
+        </form>
+
+        <section class="lista-pinturas"></section>
+
+
+    </main>
+
+
+
+    <script src="admin.js"></script>
+
+
+</body>
+
+</html>

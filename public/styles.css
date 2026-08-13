@@ -1,0 +1,1897 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    --creme: #faf4ed;
+
+    --papel: #fffaf5;
+
+    --texto: #4d4038;
+
+
+    /* nova paleta aconchegante */
+
+    --dourado: #c58f75;
+
+    --terracota: #b98268;
+
+    --rosa: #edcfc8;
+
+    --rosa-claro: #f5dfd8;
+
+    --azul: #d9e8ed;
+
+    --lavanda: #e5dced;
+
+    --verde: #dbe5d5;
+
+    --pessego: #f2d6bd;
+
+}
+
+
+
+
+
+body {
+
+    background: var(--creme);
+
+    color: var(--texto);
+
+    font-family: "Poppins", sans-serif;
+
+    overflow-x: hidden;
+
+}
+
+
+
+
+/* TIPOGRAFIA */
+
+
+h1,
+h2,
+h3 {
+
+    font-family: "Sunflower", sans-serif;
+
+    font-weight: 500;
+
+}
+
+
+
+.pequeno-titulo {
+
+    font-family: "Allura", cursive;
+
+    font-size: 48px;
+
+    font-weight: 400;
+
+    color: #bf8e77;
+
+    letter-spacing: .5px;
+
+    line-height: 1;
+
+    text-transform: none;
+
+    display: block;
+
+    opacity: .95;
+
+}
+
+
+
+
+
+
+/* ==========================
+   MANCHAS ORGÂNICAS
+========================== */
+
+
+.mancha {
+
+    position: absolute;
+
+    border-radius: 50%;
+
+    filter: blur(45px);
+
+    opacity: .6;
+
+    z-index: 0;
+
+}
+
+
+
+.mancha1 {
+
+    width: 500px;
+
+    height: 500px;
+
+    background: var(--rosa);
+
+    top: -200px;
+
+    left: -180px;
+
+}
+
+
+
+.mancha2 {
+
+    width: 450px;
+
+    height: 450px;
+
+    background: var(--azul);
+
+    bottom: -170px;
+
+    right: -150px;
+
+}
+
+
+
+.mancha3 {
+
+    width: 350px;
+
+    height: 350px;
+
+    background: var(--lavanda);
+
+    top: 40%;
+
+    left: -150px;
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+ HERO
+========================== */
+
+
+.hero {
+
+    min-height: 100vh;
+
+    position: relative;
+
+    overflow: hidden;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    padding: 80px;
+
+
+
+    background:
+
+
+        radial-gradient(circle at 20% 20%,
+            var(--rosa-claro),
+            transparent 32%),
+
+
+        radial-gradient(circle at 85% 80%,
+            var(--azul),
+            transparent 35%),
+
+
+        var(--creme);
+
+}
+
+
+
+
+
+.artista {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 100px;
+
+    max-width: 1300px;
+
+    position: relative;
+
+    z-index: 1;
+
+
+    padding: 70px 90px;
+
+
+    background: rgba(255, 250, 245, .65);
+
+
+    border: 3px solid rgba(255, 255, 255, .9);
+
+
+    border-radius: 50px;
+
+
+    box-shadow:
+
+        0 30px 80px rgba(0, 0, 0, .08);
+
+
+    backdrop-filter: blur(12px);
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+ FOTO PREMIUM
+========================== */
+
+
+
+.foto-container {
+
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+
+
+.moldura {
+
+    position: relative;
+
+    width: 420px;
+
+    height: 540px;
+
+
+    padding: 15px;
+
+
+    background:
+
+        linear-gradient(135deg,
+            var(--terracota),
+            var(--rosa));
+
+
+    border-radius:
+
+        220px 220px 45px 45px;
+
+
+
+    box-shadow:
+
+        0 35px 80px rgba(0, 0, 0, .16);
+
+
+    overflow: hidden;
+
+}
+
+
+
+
+
+.moldura::before {
+
+
+    content: "";
+
+
+    position: absolute;
+
+
+    inset: 8px;
+
+
+    border: 1px solid rgba(255, 255, 255, .7);
+
+
+    border-radius:
+
+
+        210px 210px 35px 35px;
+
+
+}
+
+
+
+
+
+
+
+.foto-artista {
+
+
+    width: 100%;
+
+    height: 100%;
+
+
+    object-fit: cover;
+
+
+    border-radius:
+
+
+        200px 200px 30px 30px;
+
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+ TEXTO HERO
+========================== */
+
+
+
+.bio {
+
+    max-width: 600px;
+
+}
+
+
+
+
+.assinatura {
+    margin-top: 35px;
+
+    font-family: "Allura", cursive;
+
+    font-size: 68px;
+
+    color: #b98268;
+
+    line-height: 1;
+
+    letter-spacing: 1px;
+
+    text-align: center;
+
+    text-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+
+
+
+
+
+
+.bio h1 {
+
+
+    font-family: "Sunflower", sans-serif;
+
+
+    font-size: 95px;
+
+
+    line-height: 1;
+
+
+    font-weight: 500;
+
+
+    color: #b98268;
+
+
+    letter-spacing: 1px;
+
+
+}
+
+
+
+
+
+.bio h3 {
+
+
+    font-family: "Sunflower", sans-serif;
+
+
+    font-size: 32px;
+
+
+    color: var(--terracota);
+
+
+    margin: 25px 0;
+
+
+}
+
+
+
+
+
+.bio p {
+
+
+    line-height: 2;
+
+
+    font-weight: 300;
+
+
+    max-width: 520px;
+
+
+}
+
+
+
+
+.categorias {
+
+
+    letter-spacing: 5px;
+
+
+    color: #b98268;
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+ SEÇÕES
+========================== */
+
+
+
+section {
+
+
+    padding: 130px 10%;
+
+
+    text-align: center;
+
+
+    position: relative;
+
+
+    overflow: hidden;
+
+
+}
+
+
+
+
+
+h2 {
+
+
+    font-size: 65px;
+
+
+    color: #9d705d;
+
+
+}
+
+
+
+
+
+.linha {
+
+
+    width: 90px;
+
+
+    height: 2px;
+
+
+    background: var(--terracota);
+
+
+    margin: 25px auto 60px;
+
+
+}
+
+
+
+
+
+
+
+
+/* SOBRE */
+
+
+.sobre {
+
+
+    background:
+
+
+        radial-gradient(circle at left,
+
+            var(--azul),
+
+            transparent 40%),
+
+
+        var(--creme);
+
+
+}
+
+
+
+.sobre p {
+
+
+    max-width: 800px;
+
+
+    margin: auto;
+
+
+    line-height: 2;
+
+
+}
+
+/* ==========================
+ GALERIA
+========================== */
+
+
+.galeria {
+
+
+    background:
+
+
+        radial-gradient(circle at top right,
+
+            var(--lavanda),
+
+            transparent 38%),
+
+
+        var(--creme);
+
+
+}
+
+
+
+
+.quadros {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(3, 1fr);
+
+
+    gap: 50px;
+
+
+}
+
+
+
+
+
+.quadro {
+
+
+    background: var(--papel);
+
+
+    padding: 25px;
+
+
+    border-radius: 35px;
+
+
+
+    box-shadow:
+
+
+        0 20px 50px rgba(0, 0, 0, .08);
+
+
+
+    transition:
+
+
+        transform .5s ease,
+
+
+        box-shadow .5s ease;
+
+
+
+}
+
+
+
+
+/* movimento artístico */
+
+
+.quadro:nth-child(odd):hover {
+
+
+    transform:
+
+
+        translate(-12px, -15px) rotate(-2deg);
+
+
+}
+
+
+
+
+
+.quadro:nth-child(even):hover {
+
+
+    transform:
+
+
+        translate(12px, -15px) rotate(2deg);
+
+
+}
+
+
+
+
+
+.quadro:hover {
+
+
+    box-shadow:
+
+
+        0 40px 80px rgba(0, 0, 0, .14);
+
+
+}
+
+
+
+
+
+
+
+.quadro img {
+
+
+    width: 100%;
+
+
+    height: 420px;
+
+
+    object-fit: cover;
+
+
+    border-radius: 25px;
+
+
+}
+
+
+
+
+
+
+
+.quadro h3 {
+
+
+    margin-top: 25px;
+
+
+    font-size: 32px;
+
+
+    color: #9d705d;
+
+
+}
+
+
+
+
+
+
+
+
+.quadro p {
+
+
+    color: #80695c;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+ PROCESSO CRIATIVO
+========================== */
+
+
+
+.processo {
+
+
+    background:
+
+
+        radial-gradient(circle at top left,
+
+            var(--rosa),
+
+            transparent 35%),
+
+
+        linear-gradient(135deg,
+
+            var(--lavanda),
+
+            var(--verde));
+
+
+}
+
+
+
+
+
+.processo-grid {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(3, 1fr);
+
+
+    gap: 45px;
+
+
+}
+
+
+
+
+.processo-grid div {
+
+
+    background:
+
+
+        rgba(255, 255, 255, .65);
+
+
+
+    padding: 45px;
+
+
+
+    border-radius: 40px;
+
+
+    backdrop-filter: blur(10px);
+
+
+
+    transition: .4s;
+
+
+}
+
+
+
+
+
+.processo-grid div:hover {
+
+
+    transform: translateY(-10px);
+
+
+}
+
+
+
+
+
+
+
+.processo-grid h3 {
+
+
+    font-size: 35px;
+
+
+    color: #9d705d;
+
+
+}
+
+
+
+
+
+
+
+/* ==========================
+ ENCOMENDAS
+========================== */
+
+
+.encomendas {
+
+
+    background:
+
+
+        radial-gradient(circle at bottom right,
+
+            var(--pessego),
+
+            transparent 45%),
+
+
+        var(--rosa);
+
+
+}
+
+
+
+
+
+
+.encomendas h2 {
+
+
+    color: #8f6655;
+
+
+}
+
+
+
+
+
+.encomendas a {
+
+
+    display: inline-block;
+
+
+    margin-top: 35px;
+
+
+    padding: 18px 55px;
+
+
+
+    border-radius: 50px;
+
+
+
+    background: var(--terracota);
+
+
+
+    color: white;
+
+
+    text-decoration: none;
+
+
+
+    transition: .3s;
+
+
+
+}
+
+
+
+
+
+
+
+.encomendas a:hover {
+
+
+    transform: translateY(-5px);
+
+
+
+    box-shadow:
+
+
+        0 15px 35px rgba(185, 130, 104, .35);
+
+
+}
+
+
+
+
+
+
+
+
+/* ==========================
+ MODAL
+========================== */
+
+
+.modal {
+
+
+    display: none;
+
+
+    position: fixed;
+
+
+    inset: 0;
+
+
+
+    background: rgba(0, 0, 0, .75);
+
+
+
+    justify-content: center;
+
+
+    align-items: center;
+
+
+    z-index: 20;
+
+
+}
+
+
+
+
+.modal img {
+
+
+    max-width: 85%;
+
+
+    max-height: 85%;
+
+
+    border-radius: 25px;
+
+
+}
+
+
+
+
+
+
+
+.modal span {
+
+
+    position: absolute;
+
+
+    top: 30px;
+
+
+    right: 50px;
+
+
+    color: white;
+
+
+    font-size: 55px;
+
+
+    cursor: pointer;
+
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+
+
+    padding: 50px;
+
+
+    background: var(--papel);
+
+
+    text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* ==========================
+ PAINEL ADMIN
+========================== */
+
+
+
+.painel {
+
+
+    min-height: 100vh;
+
+
+    padding: 80px 20px;
+
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    align-items: center;
+
+
+    justify-content: center;
+
+
+    position: relative;
+
+
+    overflow: hidden;
+
+
+
+    background:
+
+
+
+        radial-gradient(circle at top left,
+
+            var(--rosa),
+
+            transparent 35%),
+
+
+
+        radial-gradient(circle at bottom right,
+
+            var(--azul),
+
+            transparent 40%),
+
+
+
+        var(--creme);
+
+
+
+}
+
+
+
+
+
+.cabecalho-painel {
+
+
+    text-align: center;
+
+
+    margin-bottom: 50px;
+
+
+    z-index: 1;
+
+
+}
+
+
+
+
+.cabecalho-painel span {
+
+
+    color: var(--terracota);
+
+
+    letter-spacing: 5px;
+
+
+    text-transform: uppercase;
+
+
+}
+
+
+
+
+.cabecalho-painel h1 {
+
+
+    font-family: "Sunflower", sans-serif;
+
+
+    font-size: 75px;
+
+
+    color: #b98268;
+
+
+}
+
+
+
+
+.cabecalho-painel p {
+
+
+    max-width: 450px;
+
+
+    font-weight: 300;
+
+
+}
+
+
+
+
+
+
+
+
+
+.form-pintura {
+
+
+    width: 450px;
+
+
+
+    padding: 45px;
+
+
+
+    background:
+
+
+        rgba(255, 250, 245, .85);
+
+
+
+    border-radius: 40px;
+
+
+
+    box-shadow:
+
+
+        0 30px 70px rgba(0, 0, 0, .10);
+
+
+
+    backdrop-filter: blur(12px);
+
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 25px;
+
+
+    z-index: 1;
+
+
+}
+
+
+
+
+
+
+
+.campo {
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 10px;
+
+
+}
+
+
+
+
+
+.campo label {
+
+
+    color: #8f6655;
+
+
+}
+
+
+
+
+
+
+
+.campo input[type="text"] {
+
+
+    padding: 15px 20px;
+
+
+    border-radius: 25px;
+
+
+    border: 1px solid #e7d5ca;
+
+
+
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+
+
+
+
+.campo input:focus {
+
+
+    outline: none;
+
+
+    border-color: var(--terracota);
+
+
+}
+
+
+
+
+
+
+
+
+.upload {
+    min-height: 120px;
+    height: auto;
+
+    padding: 15px;
+
+    border-radius: 30px;
+    border: 2px dashed var(--terracota);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    cursor: pointer;
+
+    background: #fffaf5;
+
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+.upload input {
+
+
+    display: none;
+
+
+}
+
+#previewImagem {
+    display: none;
+    width: 100%;
+    max-width: 350px;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+
+.form-pintura button {
+
+
+    padding: 17px;
+
+
+    border: none;
+
+
+    border-radius: 50px;
+
+
+    background: var(--terracota);
+
+
+    color: white;
+
+
+    cursor: pointer;
+
+
+    font-family: "Poppins", sans-serif;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+
+
+
+
+.form-pintura button:hover {
+
+
+    transform: translateY(-5px);
+
+
+    box-shadow:
+
+
+        0 15px 35px rgba(185, 130, 104, .35);
+
+
+}
+
+
+
+
+
+
+
+
+
+/* RESPONSIVO */
+
+
+@media(max-width:900px) {
+
+
+    .artista {
+
+
+        flex-direction: column;
+
+
+        text-align: center;
+
+        padding: 40px 25px;
+
+
+    }
+
+
+
+    .moldura {
+
+
+        width: 300px;
+
+
+        height: 390px;
+
+
+    }
+
+
+
+
+    .bio h1 {
+
+
+        font-size: 55px;
+
+
+    }
+
+
+
+    .quadros,
+
+
+    .processo-grid {
+
+
+        grid-template-columns: 1fr;
+
+
+    }
+
+
+
+
+    .form-pintura {
+
+
+        width: 100%;
+
+
+    }
+
+
+
+}
+
+/* ==========================
+LISTA DE PINTURAS
+========================== */
+
+.lista-pinturas {
+
+    width: 100%;
+    max-width: 1200px;
+
+    margin-top: 60px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+}
+
+.card-pintura {
+
+    background: rgba(255, 250, 245, .9);
+
+    border-radius: 30px;
+
+    padding: 20px;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, .08);
+
+    text-align: center;
+
+    transition: .3s;
+
+}
+
+.card-pintura:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 30px 70px rgba(0, 0, 0, .12);
+
+}
+
+/* Moldura da pintura */
+
+.card-pintura img {
+
+    width: 100%;
+
+    height: 280px;
+
+    object-fit: contain;
+
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(0, 0, 0, .05);
+
+}
+
+.card-pintura h3 {
+
+    margin: 20px 0 8px;
+
+    color: var(--terracota);
+
+}
+
+.card-pintura p {
+
+    color: #80695c;
+
+    margin-bottom: 20px;
+
+}
+
+.card-pintura button {
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    cursor: pointer;
+
+    margin: 5px;
+
+    font-family: "Poppins", sans-serif;
+
+    transition: .25s;
+
+}
+
+.card-pintura button:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.editar {
+
+    background: #d8c2a8;
+
+    color: #4d4038;
+
+}
+
+.apagar {
+
+    background: #b98268;
+
+    color: white;
+
+}
+
+
+
+
+/* ==========================
+LOGIN
+========================== */
+
+
+.login {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+
+        radial-gradient(circle at top left,
+            var(--rosa),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            var(--azul),
+            transparent 40%),
+
+        var(--creme);
+
+}
+
+
+
+.login-card {
+
+
+    width: 420px;
+
+    padding: 50px;
+
+
+    background:
+
+        rgba(255, 250, 245, .75);
+
+
+    border: 3px solid rgba(255, 255, 255, .8);
+
+
+    border-radius: 45px;
+
+
+    text-align: center;
+
+
+    box-shadow:
+
+        0 30px 80px rgba(0, 0, 0, .12);
+
+
+    backdrop-filter: blur(15px);
+
+
+}
+
+
+
+.login-card span {
+
+
+    font-family: "Allura", cursive;
+
+    font-size: 45px;
+
+    color: var(--terracota);
+
+
+}
+
+
+
+.login-card h1 {
+
+
+    font-family: "Sunflower", sans-serif;
+
+    font-size: 45px;
+
+    color: #b98268;
+
+    margin: 20px 0;
+
+
+}
+
+
+
+.login-card p {
+
+
+    font-weight: 300;
+
+    margin-bottom: 35px;
+
+
+}
+
+
+
+.login-card input {
+
+
+    width: 100%;
+
+    padding: 16px 20px;
+
+    border-radius: 30px;
+
+    border: 1px solid #e7d5ca;
+
+
+    font-family: "Poppins", sans-serif;
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.login-card input:focus {
+
+
+    outline: none;
+
+    border-color: var(--terracota);
+
+
+}
+
+
+
+.login-card button {
+
+
+    width: 100%;
+
+    padding: 16px;
+
+    border: none;
+
+    border-radius: 30px;
+
+
+    background: var(--terracota);
+
+    color: white;
+
+
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+
+
+    transition: .3s;
+
+
+}
+
+
+
+.login-card button:hover {
+
+
+    transform: translateY(-5px);
+
+
+    box-shadow:
+
+        0 15px 35px rgba(185, 130, 104, .35);
+
+
+}
+
+
+#erroLogin {
+    display: none;
+    margin-top: 8px;
+    color: #c62828;
+    font-size: 13px;
+}
+
+#erroLogin.ativo {
+    display: block;
+}
+
+#senha.erro {
+    border-color: #c62828;
+    animation: tremer 0.25s ease;
+}
+
+@keyframes tremer {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
