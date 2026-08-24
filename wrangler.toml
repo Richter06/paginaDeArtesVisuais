@@ -1,0 +1,13 @@
+name = "pagina-de-artes-visuais"
+main = "worker.js"
+compatibility_date = "2026-08-24"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = [
+    "/login",
+    "/logout",
+    "/api/*",
+    "/admin.html"
+]
