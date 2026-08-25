@@ -47,7 +47,7 @@ A arquitetura atual mantém o front-end estático separado da lógica de API e d
 
 <img src="public/img/contatos.png" alt="Seção de contatos e encomendas do Little Bee" width="800">
 
-> As imagens acima utilizam os **mesmos caminhos relativos que já existiam no README**, preservando os assets atuais do repositório.
+> As imagens acima ilustram áreas das páginas de **Login**, **Administração** e **Home Page** do sistema.
 
 ---
 
